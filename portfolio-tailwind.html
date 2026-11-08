@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - TailwindCSS</title>
+    <!-- TAILWINDCSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- GOOGLE FONT - INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #2563eb;
+        --color-desc: #434655;
+        --color-jumbotron: #faf8ff;
+        --color-badge: #d0e1fb;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="py-4 px-[124px] flex justify-between border-b border-slate-200">
+      <div class="nav-logo">
+        <p class="text-lg text-black font-semibold">MyPortfolio</p>
+      </div>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="#" class="black font-semibold text-sm hover:text-primary">About</a>
+        <a href="#" class="black font-semibold text-sm hover:text-primary">Projects</a>
+        <a href="#" class="black font-semibold text-sm hover:text-primary">Contact</a>
+        <button class="bg-primary text-white px-4 py-2 rounded-md">Hire Me</button>
+      </div>
+    </nav>
+
+    <!-- HEADER / JUMBOTRON -->
+    <section class="bg-jumbotron px-6 py-8 lg:px-[124px] lg:py-12 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+      <div class="head-title order-last lg:order-first">
+        <!-- Badge -->
+        <div class="bg-badge w-fit mx-auto lg:m-0 px-5 py-2 rounded-full flex items-center gap-2">
+          <div class="bullet rounded-full bg-primary size-2"></div>
+          <p class="text-[#54647a] text-xs font-semibold">Available for new projects</p>
+        </div>
+        <!-- Title -->
+        <h1 class="text-4xl md:text-5xl text-center lg:text-start text-black font-bold leading-6xl mt-6">
+          Hello, I'm a Web <br />
+          Developer
+        </h1>
+        <!-- Description -->
+        <p class="text-desc text-center lg:text-start mt-6 leading-6 lg:leading-7 text-base lg:text-lg md:w-[512px]">
+          I craft clean, responsive, and accessible websites with modern web standards. Passionate about turning complex
+          ideas into intuitive, elegant user interfaces.
+        </p>
+        <!-- Button CTA -->
+        <div class="head-cta flex flex-col lg:flex-row items-stretch gap-4 mt-8">
+          <button id="work" class="bg-primary py-3 px-6 text-base rounded-lg text-white">View Work</button>
+          <button id="contact" class="bg-white py-3 px-6 text-base rounded-lg text-black shadow-sm">Contact</button>
+        </div>
+        <!-- Resume -->
+        <div class="head-resume mt-20 flex items-stretch gap-6">
+          <div class="card-resume">
+            <p class="card-title font-semibold text-primary text-xl">100%</p>
+            <p class="card-desc text-sm text-desc">Semantic HTML</p>
+          </div>
+          <div class="card-resume">
+            <p class="card-title font-semibold text-primary text-xl">A11y</p>
+            <p class="card-desc text-sm text-desc">WCAG Compliant</p>
+          </div>
+          <div class="card-resume">
+            <p class="card-title font-semibold text-primary text-xl">Mobile</p>
+            <p class="card-desc text-sm text-desc">First Layouts</p>
+          </div>
+        </div>
+      </div>
+      <div class="head-photo order-first lg:order-last flex justify-center">
+        <div class="card-img bg-white p-2 w-fit h-fit rounded-2xl">
+          <img src="./photo.png" alt="photo" class="size-[188px] lg:size-[320px] rounded-xl aspect-square" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SKILLS -->
+    <section id="skills">
+      <!-- INFO SECTION -->
+      <div class="head-info">
+        <p class="">What I Do</p>
+        <h2>My Skills</h2>
+        <p>Core Technologies and tools I spcecialize in to build production-ready web interfaces.</p>
+      </div>
+      <!-- LIST CARD SKILLS -->
+      <div class="skill-container"></div>
+    </section>
+
+    <!-- SECTION PROJECTS -->
+    <section id="projects">
+      <div class="head-info">
+        <p class="">Portfolio</p>
+        <h2>Featured Projects</h2>
+        <p>A selection of recent projects built with clean code and modern front-end practices.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta"></section>
+
+    <!-- FOOTER -->
+    <footer></footer>
+  </body>
+</html>

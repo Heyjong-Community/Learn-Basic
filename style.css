@@ -1,0 +1,213 @@
+:root {
+  --primary: #2563eb;
+  --desc: #434655;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+p,
+h1,
+h2 {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+.nav-container {
+  /* padding: 16px 0px 16px 0px;  atas kanan bawah kiri */
+  /* padding: 16px 0px; atas&bawah kanan&kiri */
+  /* padding: 16px; semua */
+  border-bottom: 1px solid #c3c6d7;
+  padding: 16px 124px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-logo p {
+  margin: 0;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.nav-menu a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #434655;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  color: #004ac6;
+  font-weight: 600;
+}
+
+.nav-menu .btn-hire {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 14xp;
+  font-weight: 400;
+  border: none;
+}
+
+.jumbotron {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #faf8ff;
+  padding: 48px 124px;
+  align-items: center;
+}
+
+/* KOLOM 1 - GRID JUMBOTRON */
+.badge {
+  width: fit-content;
+  background-color: #d0e1fb;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.badge .bullet {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #004ac6;
+}
+
+.badge p {
+  margin: 0;
+  color: #54647a;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.head-title h1 {
+  font-size: 48px;
+  font-weight: 700px;
+  color: black;
+  line-height: 60px;
+}
+
+.head-title .desc {
+  margin-top: 24px;
+  width: 512px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #434655;
+}
+
+.head-cta {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.head-cta #work {
+  background-color: var(--primary);
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+}
+
+.head-cta #contact {
+  background-color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: black;
+  border: none;
+  filter: drop-shadow(2px 2px 2px black);
+}
+
+.head-resume {
+  margin-top: 80px;
+  display: flex;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  gap: 24px;
+
+  .card-resume {
+    .card-title {
+      margin: 0;
+      line-height: 28px;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .card-desc {
+      margin: 0;
+      line-height: 20px;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--desc);
+    }
+  }
+}
+
+/* KOLOM 2 - GRID JUMBOTRON */
+.head-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img {
+  width: fit-content;
+  background-color: white;
+  border-radius: 16px;
+  padding: 8px;
+}
+
+.card-img img {
+  width: 320px;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+}
+
+#skills {
+  padding: 48px 124px;
+}
+
+.sub-title {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.desc-section {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  width: 551px;
+  margin: 0 auto;
+}
