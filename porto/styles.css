@@ -4,4 +4,50 @@
 }
 
 body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 104px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: black;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.nav-menu a:hover {
+  color: var(--primary);
+}
+
+.btn-hire {
+  background-color: var(--primary);
+  padding: 8px 16px;
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
 }
